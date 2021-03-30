@@ -75,7 +75,6 @@ module.exports = (env, argv) => {
   const isServe = argv.env && argv.env.WEBPACK_SERVE || false;
 
   if (isDev) {
-    config.target = "web";
     config.devServer = {
       contentBase: Paths.DIST,
       port: 3000,
