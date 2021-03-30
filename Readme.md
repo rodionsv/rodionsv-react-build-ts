@@ -21,6 +21,10 @@
 
 ## Start build with hot reload
 ```sh
+npm start
+```
+or
+```sh
 npm run start
 ```
 
@@ -36,6 +40,14 @@ npm run build
 # Testing
 ## The build uses Jest for unit testing and react-test-renderer for e2e testing 
 ## Npm command to start the tests
+```sh
+npm test
+```
+or
+```sh
+npm run test
+```
+or
 ```sh
 npm run jest
 ```
