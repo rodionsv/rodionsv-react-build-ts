@@ -12,16 +12,6 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "baseUrl": "./src",
-    "paths": {
-      "@components*": ["components*"],
-      "@constants*": ["constants*"],
-      "@layouts*": ["layouts*"],
-      "@pages*": ["pages*"],
-      "@router*": ["router*"],
-      "@shared*": ["shared*"],
-      "@utils*": ["utils*"],
-      "@styles*": ["styles*"]
-    },
     "jsx": "react",
     "resolveJsonModule": true,
     "strict": true,
