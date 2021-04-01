@@ -1,5 +1,3 @@
-const fs = require("fs");
-
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -108,18 +106,6 @@ module.exports = (env, argv) => {
   if (!isDev) {
     // internet explorer 11 support
     config.target = "es5";
-  }
-
-  if (env && env.cert) {
-    config.devServer.https = true;
-    fs.readFile(path.join(__dirname, "key.pem"), (err, data) => {
-      if (err) throw new Error("Please create key.pem file");
-      config.devServer.key = data;
-    });
-    fs.readFile(path.join(__dirname, "cert.pem"), (err, data) => {
-      if (err) throw new Error("Please create cert.pem file");
-      config.devServer.cert = data;
-    });
   }
 
   return config;
