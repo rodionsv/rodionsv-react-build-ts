@@ -2,7 +2,6 @@
   "arrowParens": "avoid",
   "useTabs": false,
   "tabWidth": 2,
-  "bracketSpacing": false,
   "singleQuote": true,
   "endOfLine": "auto",
   "jsxBracketSameLine": false,

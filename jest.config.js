@@ -20,7 +20,7 @@ module.exports = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ["src/**/*.{ts,tsx,js}", "!**/node_modules/**"],
+  collectCoverageFrom: ["src/**/*.{ts,tsx}", "!**/node_modules/**"],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: "coverage",
@@ -72,16 +72,7 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "json", "css", "node"],
 
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
-  moduleNameMapper: {
-    "^@components(.*)$": '<rootDir>/src/components/$1',
-    "^@constants(.*)$": '<rootDir>/src/constants/$1',
-    "^@layouts(.*)$": '<rootDir>/src/layouts/$1',
-    "^@pages(.*)$": '<rootDir>/src/pages/$1',
-    "^@router(.*)$": '<rootDir>/src/router/$1',
-    "^@shared(.*)$": '<rootDir>/src/shared/$1',
-    "^@utils(.*)$": '<rootDir>/src/shared/utils/$1',
-    "^@styles(.*)$": '<rootDir>/src/styles/$1',
-  },
+  // moduleNameMapper: [],
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -125,7 +116,7 @@ module.exports = {
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  // setupFiles: [],
+  setupFiles: ["dotenv/config"],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   // setupFilesAfterEnv: [],

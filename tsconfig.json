@@ -1,31 +1,55 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+
+    // Main properties
+
     "target": "es5",
     "sourceMap": true,
+    "inlineSources": true,
     "lib": ["dom", "DOM.Iterable", "esnext"],
+    "extendedDiagnostics": true,
+
+    // Js properties
+
     "allowJs": true,
     "checkJs": true,
-    "isolatedModules": true,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "baseUrl": "./src",
     "jsx": "react",
-    "resolveJsonModule": true,
+
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+
+    // Modules
+
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    // Helpers/linters
+
     "strict": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "experimentalDecorators": true,
     "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "keyofStringsOnly": true,
+
+    // Declarations
+
+    "declaration": true,
+    "declarationDir": "./types" ,
+
+    // Advance
+
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src/**/*",

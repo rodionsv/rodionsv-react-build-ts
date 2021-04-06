@@ -53,6 +53,7 @@
     "postcss-loader": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.2.1",
+    "react-hot-ts": "^0.7.3",
     "react-test-renderer": "^17.0.1",
     "source-map-loader": "^2.0.0",
     "style-loader": "^2.0.0",

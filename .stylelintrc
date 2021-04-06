@@ -173,7 +173,9 @@
           "align-content",
           "align-items",
           "align-self",
+          "flex-basis",
           "flex-flow",
+          "flex-grow",
           "flex-shrink",
           "flex-wrap",
           "grid",
@@ -204,8 +206,6 @@
         "emptyLineBefore": "always",
         "properties": [
           "flex",
-          "flex-basis",
-          "flex-grow",
           "width",
           "min-width",
           "max-width",
