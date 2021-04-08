@@ -1,3 +1,3 @@
-import React, { FC } from 'react';
+import React from 'react';
 
-export const BuildTitle: FC = (): JSX.Element => <h1>React webpack 5 build</h1>;
+export const BuildTitle: React.FC = (): JSX.Element => <h1>React webpack 5 build</h1>;
